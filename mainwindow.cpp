@@ -14,3 +14,10 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+
+void MainWindow::on_actionNew_triggered()
+{
+    //clearing out the previous stuff
+    currentFile.clear();
+    ui->textEdit->setText(QString());
+}
